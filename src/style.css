@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f7f3;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ff7eb9;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ffe066;
+  background-color: #fffae3;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell img {
+  display: none;
+  width: 50%;
+}
+
+.cell.found img {
+  display: block;
+}
+
+#score {
+  font-size: 1.2rem;
+  color: #3d348b;
+}
